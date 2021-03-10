@@ -1,0 +1,29 @@
+\subsection{1}
+
+设$f(x)$是$[0,1]$上的连续函数,且$f(x)>a>0$.证明:
+
+\begin{equation}
+	\int^1_0 \frac{1}{f(x)} \dif x \geqslant \frac{1}{\int ^1_0 f(x) \dif x}.
+\end{equation}
+
+
+\begin{proof}
+	设 $F(x)=\frac{1}{x}, x>0 .$ 则 $F(x)$ 是个凸函数
+, 做$[0,1]$ 划分:
+\begin{equation}
+	P: 0=x_{0}<x_{1}<\cdots<x_{n},\ \Delta x_{i}=x_{i}-x_{i-1}.
+\end{equation}
+那么 $\sum_{i=1}^{n} \Delta x_{i}=1$.
+由 $F(x)$ 的凸性,\ (《数学分析新讲（二）》P43 定理2)
+\begin{equation}
+	F\left(\sum_{i=1}^{n} f\left(\xi_{i}\right) \Delta x_{i}\right) \leqslant \sum_{i=1}^{n} F\left(f\left(\xi_{i}\right)\right) \Delta x_{i}.
+\end{equation}
+$|P| \rightarrow 0$ ,取极限得
+\begin{equation}
+	F\left(\int_{0}^{1} f(x) \dif x\right) \leqslant \int_{0}^{1} F(f(x)) \dif x,
+\end{equation}
+即
+\begin{equation}
+	\int^1_0 \frac{1}{f(x)} \dif x \geqslant \frac{1}{\int ^1_0 f(x) \dif x}.
+\end{equation}
+\end{proof}
